@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e99abcd-3775-414b-97a2-af7a49f55319">
+  <producedTypes>
+    <objectType typeId="b18dc3e6-b5e4-4257-ba05-e8041832a254" valueTypeId="f69f5295-7686-4d94-8af4-ab3cd6633c95"/>
+    <managerType typeId="0348b579-5685-4e38-a4b1-c03a39c5f7ec" valueTypeId="1a8332c1-e1bd-4e3a-8ecd-11461d2fd267"/>
+  </producedTypes>
+  <name>ВКМ_ОтправкаСообщенияВТГ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка сообщения ВТГ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_ОтправкаСообщенияВТГ.Form.Форма</defaultForm>
+  <attributes uuid="4e6d4963-ecde-427b-884a-3a82fe2055a8">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5f48c82d-b562-4f49-99b8-16baeeb10d14">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
