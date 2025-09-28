@@ -19,4 +19,5 @@
   <content>ScheduledJob.ВКМ_УведомленияТГБот</content>
   <content>CommonModule.ВКМ_Телеграмм</content>
   <content>Document.РеализацияТоваровУслуг</content>
+  <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
 </mdclass:Subsystem>
