@@ -20,4 +20,11 @@
   <content>CommonModule.ВКМ_Телеграмм</content>
   <content>Document.РеализацияТоваровУслуг</content>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
+  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>InformationRegister.ВКМ_ГрафикРаботы</content>
+  <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+  <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачислени</content>
 </mdclass:Subsystem>
