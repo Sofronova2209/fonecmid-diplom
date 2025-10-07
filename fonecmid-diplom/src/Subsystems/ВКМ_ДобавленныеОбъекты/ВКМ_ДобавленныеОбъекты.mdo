@@ -29,4 +29,6 @@
   <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачислени</content>
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>Role.ВКМ_КадровикРасчетчик</content>
 </mdclass:Subsystem>
