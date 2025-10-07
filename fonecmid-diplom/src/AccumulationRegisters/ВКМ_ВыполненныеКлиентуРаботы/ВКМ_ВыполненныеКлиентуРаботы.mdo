@@ -11,7 +11,7 @@
   <name>ВКМ_ВыполненныеКлиентуРаботы</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выполненные клиенту работы</value>
+    <value>Выполненные клиенту работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <registerType>Turnovers</registerType>
@@ -73,6 +73,20 @@
     </synonym>
     <type>
       <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a45f1643-6aae-42de-ac11-3790d0d294d2">
+    <name>ОписаниеРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

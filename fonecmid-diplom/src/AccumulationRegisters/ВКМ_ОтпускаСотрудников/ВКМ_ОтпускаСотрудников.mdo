@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1c8fa99-cf91-4e12-9756-a11300d8235f">
+  <producedTypes>
+    <selectionType typeId="ab90e8be-5299-43b2-8ccb-d1ea60bc91ad" valueTypeId="4c8490ff-26a2-41c2-a6ac-7f5f9d2fa16d"/>
+    <listType typeId="a0fa5120-3a7f-4937-973f-d2209a8bed58" valueTypeId="7a3290f4-47db-42e5-94e9-f893067145b8"/>
+    <managerType typeId="4565d759-1db9-47fd-914e-d8aa0324c378" valueTypeId="f41e2f0b-c322-4500-bebd-2307e20602ed"/>
+    <recordSetType typeId="ad448ca4-e12b-4fc8-b566-1ec20f53f057" valueTypeId="f6d684b4-2a65-4ff2-97d1-6a049b85f80d"/>
+    <recordKeyType typeId="c950d968-05d5-4481-8e42-7901f80d8a9d" valueTypeId="2fe087b0-0bff-420e-99b3-148bd766c0de"/>
+    <recordType typeId="6e6b3984-41f6-41d4-8798-c974da445706" valueTypeId="e1d981cd-d6b4-465b-865b-552620ac2964"/>
+  </producedTypes>
+  <name>ВКМ_ОтпускаСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отпуска сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="fa603247-f55c-4175-a14e-dcd032c9584c">
+    <name>ДнейОтпускаПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней отпуска план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3b74f961-259f-4e57-9786-4ae861cbdfb6">
+    <name>ДнейОтпускаФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней отпуска факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7450f05c-b702-4f54-9776-bb13acd5bd71">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
