@@ -18,6 +18,14 @@
   <editType>InDialog</editType>
   <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Графики отпусков</value>
+  </listPresentation>
   <dimensions uuid="ced3afbc-4433-47e4-b2f4-3dc72cae791f">
     <name>Сотрудник</name>
     <synonym>

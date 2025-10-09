@@ -20,11 +20,11 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>НачислениеФиксированнойПремии</value>
+    <value>Начисление фиксированной премии</value>
   </objectPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>НачислениеФиксированныхПремий</value>
+    <value>Начисление фиксированных премий</value>
   </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
@@ -36,6 +36,23 @@
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="065b570e-4563-4f78-b20c-e539574d3029">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="3549f80f-b6b0-4485-8a9e-59e791630de9">
     <producedTypes>
       <objectType typeId="89d29c48-5d66-45a8-a42b-671f39496929" valueTypeId="b01547eb-7a65-4fdf-8e32-85db296d9366"/>

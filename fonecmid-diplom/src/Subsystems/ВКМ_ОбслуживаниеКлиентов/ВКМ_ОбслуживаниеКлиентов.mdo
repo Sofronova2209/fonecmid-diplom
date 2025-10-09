@@ -7,9 +7,8 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Document.ВКМ_ОбслуживаниеКлиента</content>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>Role.ВКМ_КадровикРасчетчик</content>
-  <content>Document.РеализацияТоваровУслуг</content>
   <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <subsystems>Документы</subsystems>
 </mdclass:Subsystem>
