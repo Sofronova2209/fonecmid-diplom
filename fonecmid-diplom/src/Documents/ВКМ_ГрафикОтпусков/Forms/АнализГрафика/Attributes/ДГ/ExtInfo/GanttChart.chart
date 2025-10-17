@@ -242,7 +242,6 @@
       <mainColor xsi:type="core:ColorDef"/>
       <secondColor xsi:type="core:ColorDef"/>
     </contentCacheItem>
-    <autoText>true</autoText>
   </series>
   <drawEmpty>true</drawEmpty>
   <timeScale>

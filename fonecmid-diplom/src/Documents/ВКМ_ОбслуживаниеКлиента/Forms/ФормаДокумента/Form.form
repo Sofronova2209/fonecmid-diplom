@@ -298,6 +298,39 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>ПоЗаказуВыставленаРеализация</name>
+    <id>66</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ПоЗаказуВыставленаРеализация</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>ПоЗаказуВыставленаРеализацияРасширеннаяПодсказка</name>
+      <id>68</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ПоЗаказуВыставленаРеализацияКонтекстноеМеню</name>
+      <id>67</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>CheckBoxField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>ВремяЗаказа</name>
     <id>62</id>
@@ -892,7 +925,31 @@
           <segments>Объект.Ref</segments>
         </commandParameter>
         <group>FormCommandBarImportant</group>
-        <index>0</index>
+        <index>8</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardCommand.OpenByRecorder</command>
+        <type>Added</type>
+        <commandParameter xsi:type="form:DataPath">
+          <segments>Объект.RegisterRecords.ВКМ_ВыполненныеСотрудникомРаботы.Filter.Recorder.Value</segments>
+        </commandParameter>
+        <group>FormCommandBarImportant</group>
+        <index>3</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardCommand.OpenByRecorder</command>
+        <type>Added</type>
+        <commandParameter xsi:type="form:DataPath">
+          <segments>Объект.RegisterRecords.ВКМ_ВыполненныеКлиентуРаботы.Filter.Recorder.ValueTo</segments>
+        </commandParameter>
+        <group>FormCommandBarImportant</group>
+        <index>1</index>
         <userVisible>
           <common>true</common>
         </userVisible>

@@ -188,6 +188,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="82c7c040-0587-4ece-8b25-153ad361f871">
+    <name>ПоЗаказуВыставленаРеализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>По заказу выставлена реализация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <forms uuid="c1508418-f411-43aa-906c-0acc023693cd">
     <name>ФормаДокумента</name>
     <synonym>

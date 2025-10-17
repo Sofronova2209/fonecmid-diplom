@@ -321,6 +321,10 @@
   <items xsi:type="form:FormField">
     <name>ДГ</name>
     <id>167</id>
+    <title>
+      <key>ru</key>
+      <value>Диаграма Ганта Отпуска Сотрудников</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -650,6 +654,9 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
+  <excludedCommands>PostAndClose</excludedCommands>
+  <excludedCommands>Write</excludedCommands>
+  <excludedCommands>Post</excludedCommands>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -732,7 +739,20 @@
   </attributes>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ВКМ_ОтпускаСотрудников.StandardCommand.OpenByRecorder</command>
+        <type>Added</type>
+        <commandParameter xsi:type="form:DataPath">
+          <segments>Объект.RegisterRecords.ВКМ_ОтпускаСотрудников.Filter.Recorder.Value</segments>
+        </commandParameter>
+        <group>FormCommandBarImportant</group>
+        <index>0</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
     <repostOnWrite>true</repostOnWrite>

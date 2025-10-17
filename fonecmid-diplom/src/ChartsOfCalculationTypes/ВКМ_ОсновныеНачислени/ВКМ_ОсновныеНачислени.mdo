@@ -59,10 +59,15 @@
       <code xsi:type="core:StringValue">
         <value>2</value>
       </code>
-      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачислени.Оклад</base>
-      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</base>
-      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачислени.Оклад</leading>
       <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачислени.Оклад</leading>
+    </items>
+    <items id="e8a48015-e0eb-4037-bd95-ecab7ae35a65">
+      <name>ПремияОтЗаказа</name>
+      <description>Премия от заказа</description>
+      <code xsi:type="core:StringValue">
+        <value>3</value>
+      </code>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

@@ -51,6 +51,19 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <attributes uuid="0562e5ce-ec9a-4151-bd76-bf4da29d66e6">
+    <name>ПоЗаказуВыставленаРеализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>По заказу выставлена реализация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <dimensions uuid="022dd22c-5649-4c2b-bd6c-eb97f60b379c">
     <name>Клиент</name>
     <synonym>

@@ -16,5 +16,6 @@
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
   <content>InformationRegister.ВКМ_ГрафикРаботы</content>
+  <content>AccumulationRegister.ВКМ_ВыставленныеАктыКлиенту</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
 </mdclass:Subsystem>
