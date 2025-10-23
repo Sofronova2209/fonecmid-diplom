@@ -35,6 +35,32 @@
 			<dataPath>СуммаПродано</dataPath>
 			<field>СуммаПродано</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлиентПродажи</dataPath>
+			<field>КлиентПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент продажи</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорПродажи</dataPath>
+			<field>ДоговорПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор продажи</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ВКМ_ВыставленныеАктыКлиентуОбороты.Клиент,
@@ -52,23 +78,21 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ВТ_Сравнение.Клиент,
-	ВТ_Сравнение.Договор,
-	ВТ_Сравнение.ОписаниеРабот,
-	ВТ_Сравнение.СуммаАктов,
-	ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот КАК СуммаПродано
+	СУММА(ВТ_Сравнение.СуммаАктов) КАК СуммаАктов,
+	СУММА(ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот) КАК СуммаПродано,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент КАК КлиентПродажи,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор КАК ДоговорПродажи,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.ОписаниеРабот
 ИЗ
-	ВТ_Сравнение КАК ВТ_Сравнение
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Авто,) КАК
-			ВКМ_ВыполненныеКлиентуРаботыОбороты
+	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Авто,) КАК
+		ВКМ_ВыполненныеКлиентуРаботыОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сравнение КАК ВТ_Сравнение
 		ПО ВТ_Сравнение.Клиент = ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент
 		И ВТ_Сравнение.Договор = ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор
 СГРУППИРОВАТЬ ПО
-	ВТ_Сравнение.Клиент,
-	ВТ_Сравнение.Договор,
-	ВТ_Сравнение.ОписаниеРабот,
-	ВТ_Сравнение.СуммаАктов,
-	ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот</query>
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.ОписаниеРабот</query>
 	</dataSet>
 	<totalField>
 		<dataPath>СуммаАктов</dataPath>
@@ -94,6 +118,7 @@
 		</value>
 		<useRestriction>false</useRestriction>
 		<availableAsField>false</availableAsField>
+		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -109,9 +134,8 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<expression>&amp;Периодотчета.ДатаНачала</expression>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -127,9 +151,8 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>false</useRestriction>
+		<useRestriction>true</useRestriction>
 		<expression>&amp;Периодотчета.ДатаОкончания</expression>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -142,10 +165,22 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Клиент</dcsset:field>
+					<dcsset:field>КлиентПродажи</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Договор</dcsset:field>
+					<dcsset:field>ДоговорПродажи</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОписаниеРабот</dcsset:field>
@@ -224,7 +259,7 @@
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Клиент</dcsset:field>
+						<dcsset:field>КлиентПродажи</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 					</dcsset:item>
@@ -238,7 +273,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Договор</dcsset:field>
+							<dcsset:field>ДоговорПродажи</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

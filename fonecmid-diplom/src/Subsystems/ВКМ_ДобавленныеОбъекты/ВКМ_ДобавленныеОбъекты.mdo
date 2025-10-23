@@ -32,11 +32,11 @@
   <content>Document.ВКМ_ГрафикОтпусков</content>
   <content>Role.ВКМ_КадровикРасчетчик</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <content>Report.ВКМ_РасчетыССотрудниками</content>
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>AccumulationRegister.ВКМ_ВыставленныеАктыКлиенту</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <subsystems>Документы</subsystems>
   <subsystems>Регистры</subsystems>
   <subsystems>Справочники</subsystems>

@@ -9,8 +9,8 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>Role.ВКМ_КадровикРасчетчик</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>AccumulationRegister.ВКМ_ВыставленныеАктыКлиенту</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <subsystems>Документы</subsystems>
 </mdclass:Subsystem>
