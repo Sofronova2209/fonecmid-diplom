@@ -15,16 +15,4 @@
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>com._1c.g5.v8.dt.core.V8ConfigurationNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>tests/ЗапускПользовательскогоРежима.feature</name>
-			<type>1</type>
-			<location>C:/Users/SofronovaN/Downloads/Тестирование/Test/ЗапускПользовательскогоРежима.feature</location>
-		</link>
-		<link>
-			<name>tests/ФормированиеОтчетаАнлизВыставленныхАктов2.feature</name>
-			<type>1</type>
-			<location>C:/Users/SofronovaN/Downloads/Тестирование/Test/ФормированиеОтчетаАнлизВыставленныхАктов2.feature</location>
-		</link>
-	</linkedResources>
 </projectDescription>
